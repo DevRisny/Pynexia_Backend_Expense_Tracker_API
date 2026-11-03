@@ -1,0 +1,39 @@
+{
+  "name": "expense-tracker-api",
+  "version": "1.0.0",
+  "description": "Secure REST API for personal expense tracking: JWT auth, categories, monthly budgets with alerts, reports, CSV export, OpenAPI docs and a dashboard.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node scripts/seed.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "keywords": [
+    "express",
+    "rest-api",
+    "jwt",
+    "sqlite",
+    "expense-tracker"
+  ],
+  "author": "Junaideen Risny Suha",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "better-sqlite3": "^12.4.1",
+    "chart.js": "^4.4.6",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.7.3",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "swagger-ui-express": "^5.0.1",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
